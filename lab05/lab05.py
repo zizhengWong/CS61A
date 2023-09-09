@@ -232,7 +232,7 @@ def count_palindromes(L):
     >>> count_palindromes(("Acme", "Madam", "Pivot", "Pip"))
     2
     """
-    return ______
+    return sum([1 for s in L if s[::-1].lower() == s.lower()])
 
 
 def coords(fn, seq, lower, upper):
@@ -243,7 +243,7 @@ def coords(fn, seq, lower, upper):
     [[-2, 4], [1, 1], [3, 9]]
     """
     "*** YOUR CODE HERE ***"
-    return ______
+    return [[x, fn(x)] for x in seq if lower <= fn(x) <= upper]
 
 
 def change_abstraction(change):
