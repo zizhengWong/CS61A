@@ -88,3 +88,4 @@ def double_eights(n):
         else:
             flag=0
         n//=10
+    return False

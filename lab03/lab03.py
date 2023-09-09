@@ -124,7 +124,7 @@ def div_by_primes_under(n):
     checker = lambda x: False
     i = 2
     while i<=n:
-        # checker(i)为False, 表明i是个质数
+        # checker(i)为False, 表明i是个prime
         if not checker(i):
             # checker自己不断嵌套自己
             checker = (lambda f,i: lambda x: x%i==0 or f(x))(checker,i)

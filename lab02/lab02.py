@@ -128,7 +128,9 @@ def cycle(f1, f2, f3):
                 else:
                     res=f3(res)
             return res
+
         return cycle_func
+        
     return higher_order_func
 
 
